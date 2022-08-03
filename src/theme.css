@@ -1,0 +1,39 @@
+.text-color-grey {
+  color: darkgray;
+}
+.bg-color-header {
+  background-color: #0F044C;
+}
+.bg-color-footer {
+  background-color: #141E61;
+}
+.footer-wrapper ul {
+  list-style: none;
+}
+.btn-view {
+  --bs-btn-bg: #e4eaff;
+  --btn-border-color: #3f4b6f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3f4b6f;
+  --bs-btn-hover-border-color: #3f4b6f;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #3f4b6f;
+  --bs-btn-active-border-color: #3f4b6f;
+}
+/*** Logo **/
+.logo {
+  height: 40px;
+}
+/** cards **/
+.card-spacing {
+  margin-right: 50px;
+}
+.card-img-top {
+  width: 100%;
+  max-height: 146px;
+}
+.card-body{
+  background-color: #EEEEEE;
+  --bs-bg-opacity: 1;
+}
