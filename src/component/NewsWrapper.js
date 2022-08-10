@@ -14,7 +14,7 @@ export default function NewsWrapper(props) {
   useEffect(() => {
     (async () => {
       const articless = await getNews(1);
-      //setArticles(articless);
+      //eslint-disable-next-line
       document.title = capitalize(props.category);
     })();
   }, []);
