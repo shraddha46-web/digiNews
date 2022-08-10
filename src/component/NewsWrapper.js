@@ -10,7 +10,6 @@ export default function NewsWrapper(props) {
   const [lastPageNumber, setLastPageNumber] = useState(1);
   const [isLoader, setIsloader] = useState(false);
   const [totalResults, setTotalResults] = useState(0);
-  const proxyUrl = "https://cors-anywhere.herokuapp.com/"
 
   useEffect(() => {
     (async () => {
@@ -36,11 +35,11 @@ export default function NewsWrapper(props) {
 
   function getNews(pageNo) {
     // //By default all top headlines news without any category
-    let newsUrl = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=${props.country}&apiKey=${props.api_key}&page=${pageNo}&pageSize=${props.pageSize}`;
+    let newsUrl = `http://newsapi.org/v2/top-headlines?country=${props.country}&apiKey=${props.api_key}&page=${pageNo}&pageSize=${props.pageSize}`;
 
     //All top news with selected category
     if (props.category !== "top headlines") {
-      newsUrl = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.api_key}&page=${pageNo}&pageSize=${props.pageSize}`;
+      newsUrl = `http://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.api_key}&page=${pageNo}&pageSize=${props.pageSize}`;
     }
 
     setIsloader(true);
@@ -58,11 +57,11 @@ export default function NewsWrapper(props) {
   const fetchMoreData = async () => {
     let pageNo = pageNumber + 1;
     // //By default all top headlines news without any category
-    let newsUrl = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=${props.country}&apiKey=${props.api_key}&page=${pageNo}&pageSize=${props.pageSize}`;
+    let newsUrl = `http://newsapi.org/v2/top-headlines?country=${props.country}&apiKey=${props.api_key}&page=${pageNo}&pageSize=${props.pageSize}`;
 
     //All top news with selected category
     if (props.category !== "top headlines") {
-      newsUrl = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.api_key}&page=${pageNo}&pageSize=${props.pageSize}`;
+      newsUrl = `http://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.api_key}&page=${pageNo}&pageSize=${props.pageSize}`;
     }
 
     await fetch(newsUrl)
