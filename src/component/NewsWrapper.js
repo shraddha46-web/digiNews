@@ -3,7 +3,6 @@ import FooterWrapper from "./FooterWrapper";
 import NewsDetails from "./NewsDetails";
 import Spinner from "./Spinner";
 import InfiniteScroll from "react-infinite-scroll-component";
-var data = require("../newsInfo.json");
 
 export default function NewsWrapper(props) {
   const [articles, setArticles] = useState([]);

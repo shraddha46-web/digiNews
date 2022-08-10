@@ -78,7 +78,7 @@ export default function HeaderWrapper() {
               </li>
             </ul>
             {/* Start of Global Search */}
-            <div className="d-inline" style={{marginLeft: "10rem"}}>
+            <div className="d-inline">
               <Link className="search text-light" to="/search">
                 <i className="fa fa-search search"></i>
               </Link>
