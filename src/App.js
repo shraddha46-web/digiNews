@@ -3,15 +3,22 @@ import HeaderWrapper from "./component/HeaderWrapper";
 import NewsWrapper from "./component/NewsWrapper";
 import "./theme.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import * as React from "react";
 import NoPage from "./component/NoPage";
 import About from "./component/About";
+import BannerWrapper from "./component/BannerWrapper";
+import SearchNews from "./component/SearchNews";
 
 function App() {
+// let api_key = process.env.REACT_APP_NEWS_API;
+let api_key = "1e204760b8d449e8835960f269c4f1b9";
+    
   return (
     <BrowserRouter>
       <div className="App">
         <HeaderWrapper />
+        <BannerWrapper />
         <Routes>
           <Route
             path="/"
@@ -19,6 +26,7 @@ function App() {
               <NewsWrapper
                 key="top-news"
                 pageSize="20"
+                api_key={api_key}
                 country="in"
                 category="top headlines"
               />
@@ -29,6 +37,7 @@ function App() {
             element={
               <NewsWrapper
                 pageSize="20"
+                api_key={api_key}
                 country="in"
                 category="top headlines"
               />
@@ -42,6 +51,7 @@ function App() {
               <NewsWrapper
                 key="business"
                 pageSize="20"
+                api_key={api_key}
                 country="in"
                 category="business"
               />
@@ -54,6 +64,7 @@ function App() {
               <NewsWrapper
                 key="entertainment"
                 pageSize="20"
+                api_key={api_key}
                 country="in"
                 category="entertainment"
               />
@@ -66,6 +77,7 @@ function App() {
               <NewsWrapper
                 key="general"
                 pageSize="20"
+                api_key={api_key}
                 country="in"
                 category="general"
               />
@@ -78,6 +90,7 @@ function App() {
               <NewsWrapper
                 key="health"
                 pageSize="20"
+                api_key={api_key}
                 country="in"
                 category="health"
               />
@@ -90,6 +103,7 @@ function App() {
               <NewsWrapper
                 key="science"
                 pageSize="20"
+                api_key={api_key}
                 country="in"
                 category="science"
               />
@@ -102,6 +116,7 @@ function App() {
               <NewsWrapper
                 key="sports"
                 pageSize="20"
+                api_key={api_key}
                 country="in"
                 category="sports"
               />
@@ -114,12 +129,24 @@ function App() {
               <NewsWrapper
                 key="technology"
                 pageSize="20"
+                api_key={api_key}
                 country="in"
                 category="technology"
               />
             }
           />
-          <Route path="*" element={NoPage} />
+          <Route
+            path="search"
+            exact
+            element={
+             <SearchNews />
+            }
+          />
+          <Route path="*" exact={true} element={<NoPage />} />
+ {/* <Route path="*" exact={true} component={NoPage} /> */}
+          {/* <Route path='/404' component={NoPage} />
+<Redirect from='*' to='/404' /> */}
+
         </Routes>
       </div>
     </BrowserRouter>

@@ -4,7 +4,7 @@ export default function FooterWrapper(props) {
 
   return (
     <div className="footer-wrapper" style={{textAlign : 'left'}}>
-     <div className="pb-5">
+     {/* <div className="pb-5">
       <div className="container">
      <button disabled = {props.pageNumber === 1 } className="btn btn-primary" onClick={props.onhandlePrev}>
           Prev &nbsp;<i className="bi bi-arrow-right"></i>
@@ -13,13 +13,13 @@ export default function FooterWrapper(props) {
           Next &nbsp;<i className="bi bi-arrow-right"></i>
         </button>
         </div>
-      </div>
+      </div> */}
       <div className=" bg-color-footer text-color-grey">
         <div className=" px-4 ">
           <div className="row gx-4">
             <div className="col-xs-12 col-sm-3 col-md-3">
               <div className=" text-light mt-5">
-                <h5>Dummy Text</h5>
+                <h5>Summary</h5>
                 <div className="footer-content text-color-grey">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.

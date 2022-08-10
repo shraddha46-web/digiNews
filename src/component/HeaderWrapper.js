@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function HeaderWrapper() {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg bg-color-header text-light">
+    <div className="header-wrapper">
+      <nav className=" navbar navbar-expand-lg bg-color-header text-light  fixed-top">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -37,7 +37,7 @@ export default function HeaderWrapper() {
                   aria-current="page"
                   to="/"
                 >
-                  Top Headlines
+                  Top
                 </Link>
               </li>
               <li className="nav-item">
@@ -77,6 +77,15 @@ export default function HeaderWrapper() {
                 </Link>
               </li>
             </ul>
+            {/* Start of Global Search */}
+            <div className="d-inline">
+              <Link className="search text-light" to="/search">
+                <i className="fa fa-search search"></i>
+              </Link>
+              <span className="p-3">Search DigiNews</span>
+            </div>
+
+            {/* End of Global Search */}
           </div>
         </div>
       </nav>

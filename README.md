@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### To add .env used reffered below link
+
+https://stackoverflow.com/questions/49579028/adding-an-env-file-to-react-project
+
+
+### To install page on github
+
+Replace "homepage": "https://shraddha46-web.github.io/digiNews" in package.json
