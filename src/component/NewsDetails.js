@@ -27,7 +27,8 @@ export default function NewsDetails(props) {
           src={
             urlToImage
               ? urlToImage
-              : "https://nenow.in/wp-content/uploads/2022/07/free-fire-redeem-codes.jpg"
+              :   "https://nenow.in/wp-content/uploads/2022/07/free-fire-redeem-codes.jpg"
+              
           }
           className="card-img-top"
           alt="img"
@@ -44,10 +45,9 @@ export default function NewsDetails(props) {
           <a
             href={url}
             className="btn btn-view text-light "
-            // data-bs-toggle="modal"
-            // data-bs-target="#newsDetailModal"
             target="_blank"
             rel="noopener noreferrer"
+            style={{float: "right"}}
           >
             View
           </a>
