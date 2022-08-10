@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/digiNews/static/css/main.f8fde35b.css",
-    "main.js": "/digiNews/static/js/main.ee0837b7.js",
+    "main.js": "/digiNews/static/js/main.f84a7a25.js",
     "static/js/787.420c68f9.chunk.js": "/digiNews/static/js/787.420c68f9.chunk.js",
     "static/media/spinner.gif": "/digiNews/static/media/spinner.416388d0c02d190a2b38.gif",
     "index.html": "/digiNews/index.html",
     "main.f8fde35b.css.map": "/digiNews/static/css/main.f8fde35b.css.map",
-    "main.ee0837b7.js.map": "/digiNews/static/js/main.ee0837b7.js.map",
+    "main.f84a7a25.js.map": "/digiNews/static/js/main.f84a7a25.js.map",
     "787.420c68f9.chunk.js.map": "/digiNews/static/js/787.420c68f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f8fde35b.css",
-    "static/js/main.ee0837b7.js"
+    "static/js/main.f84a7a25.js"
   ]
 }
