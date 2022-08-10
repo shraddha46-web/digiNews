@@ -76,4 +76,18 @@ https://stackoverflow.com/questions/49579028/adding-an-env-file-to-react-project
 
 ### To install page on github
 
-Replace "homepage": "https://shraddha46-web.github.io/digiNews" in package.json
+## 1. Replace "homepage": "https://shraddha46-web.github.io/digiNews" in package.json with your details
+
+## 2. npm install --save gh-pages
+## 3. Add the following scripts in your package.json:
+  "scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+## Step 3: Deploy the site by running npm run deploy
+## npm run deploy
+## Step 4: For a project page, ensure your project’s settings use gh-pages
+## Finally, make sure GitHub Pages option in your GitHub project settings is set to use the gh-pages branch
+
+## For react app deployment, reffer https://create-react-app.dev/docs/deployment/

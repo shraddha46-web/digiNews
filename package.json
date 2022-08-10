@@ -1,4 +1,5 @@
 {
+  "homepage": "https://shraddha46-web.github.io/digiNews",
   "name": "react-news-app",
   "version": "0.1.0",
   "private": true,
@@ -7,13 +8,16 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "dotenv": "^16.0.1",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-infinite-scroll-component": "^6.1.0",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
