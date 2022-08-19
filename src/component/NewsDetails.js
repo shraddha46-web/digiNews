@@ -34,7 +34,7 @@ export default function NewsDetails(props) {
           alt="img"
         />
         <div className="card-body">
-          <h5 className="card-title">{title.slice(0, 51)}</h5>
+          <h5 className="card-title">{title ? title.slice(0, 51) : ""}</h5>
           <p className="card-text">{description && description.slice(0, 100)}</p>
           {!description &&<p className="card-text no-text"></p>}
           <p className="card-text author">

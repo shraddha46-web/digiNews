@@ -139,7 +139,7 @@ let api_key = "1e204760b8d449e8835960f269c4f1b9";
             path="search"
             exact
             element={
-             <SearchNews />
+             <SearchNews api_key={api_key} />
             }
           />
           <Route path="*" exact={true} element={<NoPage />} />
